@@ -8,7 +8,7 @@ useradd -m $1
 
 mkdir /home/$1/.ssh
 
-cp ../public-keys/$1.pub /home/$1/.ssh/authorized_keys
+cp ../public-keys/id_rsa.pub /home/$1/.ssh/authorized_keys
 
 chown -R $1:$1 /home/$1/.ssh/
 chown 700 /home/$1/.ssh
