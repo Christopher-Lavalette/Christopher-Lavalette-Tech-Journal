@@ -1,0 +1,16 @@
+[nginx]
+ansible01-chris
+
+[webmin]
+ansible02-chris
+
+[all]
+ansible01-chris
+ansible02-chris
+
+[windows]
+mgmt01-chris
+wks01-chris 
+
+[windows:vars]
+ansible_shell_type=powershell

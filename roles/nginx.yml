@@ -1,0 +1,16 @@
+---
+- name: nginx SYS265
+  hosts: nginx
+  become: true
+  vars:
+    install_utilities: false
+    firewalld_enable: true
+  roles:
+    - geerlingguy.nginx
+
+  tasks:
+  - name: add firewall rule
+    firewalld:
+      port: 80/tcp
+      permanent: true
+      state: enabled

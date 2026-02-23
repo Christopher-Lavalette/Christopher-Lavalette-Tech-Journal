@@ -1,0 +1,4 @@
+---
+# tasks file for ansible-role-webmin
+- name: Include installation tasks
+  include_tasks: install.yml
